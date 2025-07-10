@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Predictor</title>
+
+    <!-- Link to external CSS file located in the 'static' folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Heading -->
+        <h2>Iris Flower Class Prediction</h2>
+
+        <!-- Prediction Form: Sends data to '/predict' route via POST -->
+        <form method="POST" action="/predict">
+            <!-- Input fields for the four Iris features -->
+            <input type="text" name="sepal length (cm)" placeholder="Sepal Length" required><br>
+            <input type="text" name="sepal width (cm)" placeholder="Sepal Width" required><br>
+            <input type="text" name="petal length (cm)" placeholder="Petal Length" required><br>
+            <input type="text" name="petal width (cm)" placeholder="Petal Width" required><br>
+            
+            <!-- Submit button -->
+            <input type="submit" value="Predict">
+        </form>
+
+        <!-- Display the prediction result returned by Flask -->
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
