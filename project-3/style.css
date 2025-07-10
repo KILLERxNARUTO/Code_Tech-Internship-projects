@@ -1,0 +1,60 @@
+/* ---------- Global Body Styling ---------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+    background: linear-gradient(to right, #d4fc79, #96e6a1); /* Light green gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Center the container using Flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* ---------- Container Box Styling ---------- */
+.container {
+    background: white; /* White background for the form box */
+    padding: 40px; /* Inner spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+    width: 350px;
+    text-align: center;
+}
+
+/* ---------- Heading ---------- */
+h2 {
+    margin-bottom: 20px;
+    color: #2d3436; /* Dark grey for title */
+}
+
+/* ---------- Input Fields ---------- */
+form input[type="text"] {
+    width: 90%; /* Almost full width inside container */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+}
+
+/* ---------- Submit Button ---------- */
+form input[type="submit"] {
+    background-color: #00b894; /* Teal background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s; /* Smooth hover transition */
+}
+
+/* ---------- Submit Button Hover Effect ---------- */
+form input[type="submit"]:hover {
+    background-color: #019875; /* Darker teal on hover */
+}
+
+/* ---------- Prediction Text ---------- */
+h3 {
+    color: #0984e3; /* Soft blue for prediction message */
+    margin-top: 20px;
+}
